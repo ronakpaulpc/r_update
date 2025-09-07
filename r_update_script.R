@@ -81,6 +81,82 @@ update.packages(ask = F)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # C2 - Installing and loading the required packages -----------------------
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Installing the packages required for my usage
+install.packages(c(
+    # Data i/o
+    "here",                 # relative file path
+    "rio",                  # file import-export
+    
+    # Data manipulation
+    "janitor",              # data cleaning fns
+    "haven",                # stata, sas, spss data io
+    "labelled",             # var labelling
+    "readxl",               # excel sheets
+    "scales",               # to change formats and units
+    "skimr",                # quick data summary
+    "broom",                # view model results
+    
+    # Data analysis
+    "DHS.rates",            # demographic rates for dhs-like surveys
+    "GeneralOaxaca",        # BO decomposition for non-linear
+    "survey",               # apply survey weights
+    
+    # Analysis output
+    "gt",
+    "modelsummary",         # output summary tables
+    "gtsummary",            # output summary tables
+    "flextable",            # creating tables from objects
+    "officer",              # editing in office docs
+    
+    # R graph related packages
+    "ggstats",
+    "RColorBrewer",
+    "patchwork",
+    
+    # Misc packages
+    "tidyverse",            # Data manipulation iron man
+    "tictoc"                # Code timing
+))
+
+
+# Loading the required packages
+easypackages::libraries(
+    # Data i/o
+    "here",                 # relative file path
+    "rio",                  # file import-export
+    
+    # Data manipulation
+    "janitor",              # data cleaning fns
+    "haven",                # stata, sas, spss data io
+    "labelled",             # var labelling
+    "readxl",               # excel sheets
+    # "scales",               # to change formats and units
+    "skimr",                # quick data summary
+    "broom",                # view model results
+    
+    # Data analysis
+    "DHS.rates",            # demographic rates for dhs-like surveys
+    "GeneralOaxaca",        # BO decomposition for non-linear
+    "survey",               # apply survey weights
+    
+    # Analysis output
+    "gt",
+    # "modelsummary",          # output summary tables
+    "gtsummary",            # output summary tables
+    "flextable",            # creating tables from objects
+    "officer",              # editing in office docs
+    
+    # R graph related packages
+    "ggstats",
+    "RColorBrewer",
+    # "scales",
+    "patchwork",
+    
+    # Misc packages
+    "tidyverse",            # Data manipulation iron man
+    "tictoc"                # Code timing
+)
+
 
 # TBD ####
 
